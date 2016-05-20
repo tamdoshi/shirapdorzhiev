@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewBag.Title</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+
+    <meta name="description" content="The description of my page" />
+</head>
+<body id="@RenderSection("BodyId", false)">
+
+    <div class="page-wrap">
+        <div id="header">
+            <div class="container">
+                <h1>@Html.ActionLink("Ширап Доржиев", "Index", new {controller="Home"}, new { @class = "logo" })</h1>
+                <span id="slogan">Сайт Ширапа Доржиева</span>
+                <ul id="menu">
+                    <li class="home">@Html.ActionLink("Главная", "Index", new { controller = "Home" })</li>
+                    <li class="about">@Html.ActionLink("Обо мне", "About", "Home")</li>
+                    <li class="portfolio">@Html.ActionLink("Галерея", "gallery", "Home")</li>
+                    <li class="contact">@Html.ActionLink("Контакты", "contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+
+        @*<div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        @Html.ActionLink("Имя приложения", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
+                            <li>@Html.ActionLink("О программе", "About", "Home")</li>
+                            <li>@Html.ActionLink("Контакт", "Contact", "Home")</li>
+                        </ul>
+                        @Html.Partial("_LoginPartial")
+                    </div>
+                </div>
+            </div>*@
+        
+            @RenderBody()
+
+        
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <h6>&copy; @DateTime.Now.Year <a href="http://www.shirapdorzhiev.com">shirapdorzhiev.com</a> - Все права защищены</h6>
+        </div>
+    </div>
+
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
+</body>
+</html>

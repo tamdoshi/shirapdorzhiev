@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Галерея";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section BodyId{portfolio}
+<div id="pagename">
+    <div class="container">
+        <h2>Живопись</h2>
+    </div>
+</div>
+<div class="container">
+    <div class="wrap">
+        <ul class="myul">
+            <li>
+                <img src="../Content/images/thumbs/Ямаан-дугы-(козий-мост).jpg" class="photos" rel="group1" data-glisse-big="../Content/images/xxlarge/tb_Ямаан-дугы-(козий-мост).jpg" title="Ямаан дугы (козий-мост)" />
+            </li>
+            <li>
+                <img src="../Content/images/thumbs/Вечером-на-Чевыркуе.jpg" class="photos" rel="group1" data-glisse-big="../Content/images/xxlarge/tb_Вечером-на-Чевыркуе.jpg" title="Вечером на Чевыркуе" />
+            </li>
+            <li>
+                <img src="../Content/images/thumbs/Просвет-на-развилке.jpg" class="photos" rel="group1" data-glisse-big="../Content/images/xxlarge/tb_Просвет-на-развилке.jpg" title="Просвет на развилке" />
+            </li>
+            <li>
+                <img src="../Content/images/thumbs/Утро-в-горах.jpg" class="photos" rel="group1" data-glisse-big="../Content/images/xxlarge/tb_Утро-в-горах.jpg" title="Утро в горах" />
+            </li>
+            <li>
+                <img src="../Content/images/thumbs/Весна-в-разгаре.jpg" class="photos" rel="group1" data-glisse-big="../Content/images/xxlarge/tb_Весна-в-разгаре.jpg" title="Весна в разгаре" />
+            </li>
+            <li>
+                <img src="../Content/images/thumbs/Штормит.jpg" class="photos" rel="group1" data-glisse-big="../Content/images/xxlarge/tb_Штормит.jpg" title="Штормит" />
+            </li>
+            <li>
+                <img src="../Content/images/thumbs/Цветение.jpg" class="photos" rel="group1" data-glisse-big="../Content/images/xxlarge/tb_Цветение.png" title="Цветение" />
+            </li>
+
+            <li>
+                <img src="../Content/images/thumbs/Цветение-сакуры.jpg" class="photos" rel="group1" data-glisse-big="../Content/images/xxlarge/tb_Цветение-сакуры.jpg" title="Цветение сакуры" />
+            </li>
+            <li>
+                <img src="../Content/images/thumbs/Красоты-вершин.jpg" class="photos" rel="group1" data-glisse-big="../Content/images/xxlarge/tb_Красоты-вершин.jpg" title="Красоты вершин" />
+            </li>
+            <li>
+                <img src="../Content/images/thumbs/В-начале-лета.jpg" class="photos" rel="group1" data-glisse-big="../Content/images/xxlarge/tb_В-начале-лета.jpg" title="В начале лета" />
+            </li>
+            <li>
+                <ul class="stack" data-count="3" title="Триптих">
+
+                    <li>
+                        <img src="../Content/images/thumbs/Триптих-«Костровые-игры»--«Ёхор».jpg" rel="group2" data-glisse-big="../Content/images/xxlarge/tript/triptih_fire_ehor.jpg" class="tl" title="Триптих «Костровые игры» «Ёхор»">
+                    </li>
+                    <li>
+                        <img src="../Content/images/thumbs/Триптих-«Костровые-игры»-«Песня».jpg" rel="group2" data-glisse-big="../Content/images/xxlarge/tript/triptih_fire_song.jpg" class="tl" title="Триптих «Костровые игры» «Песня»">
+                    </li>
+
+                    <li>
+                        <img src="../Content/images/thumbs/Триптих-«Костровые-игры»-«Ульгер».jpg" rel="group2" data-glisse-big="../Content/images/xxlarge/tript/triptih_fire_ulger.jpg" class="tl" title="Триптих «Костровые игры» «Ульгэр»">
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/glisse")
+@Styles.Render("~/Content/glisse")
+

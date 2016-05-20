@@ -1,0 +1,60 @@
+﻿@model Shirapdorzhiev.Models.ContactModels
+@{
+    ViewBag.Title = "Контакты";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section BodyId{contact}
+<div id="pagename">
+    <div class="container">
+        <h2>Связаться со мной</h2>
+    </div>
+</div>
+<div id="content">
+    <div class="container">
+        <div id="main">
+            <p id="tip">Все поля обязательны для заполнения</p>
+
+            @using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { @class = "contact_form", id = "contacts_form", role = "form" }))
+            {
+
+                @Html.ValidationSummary(true)
+
+                <div class="row">
+                    @Html.LabelFor(model => model.FirstName, "Имя:", new { @class = "label_name" })
+                    @Html.EditorFor(model => model.FirstName)
+                    @Html.ValidationMessageFor(model => model.FirstName)
+                </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.LastName, "Фамилия:", new { @class = "label_name" })
+                        @Html.EditorFor(model => model.LastName)
+                    </div>
+
+                    <div class="row">
+                        @Html.LabelFor(model => model.Email, "Email:", new { @class = "label_name" })
+                        @Html.EditorFor(model => model.Email)
+                        @Html.ValidationMessageFor(model => model.Email)
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.Comment, "Ваше сообщение:", new { @class = "label_name" })
+                        @Html.TextAreaFor(model => model.Comment, new { @rows = "4" })
+                    </div>
+
+                    <div class="row contact_buttons">
+                        <input type="submit" value="Отправить" class="button" />
+                        <input type="reset" value="Сбросить" class="button" />
+                    </div>
+            }
+
+        </div>
+        <div id="sidebar">
+            <div class="block">
+                <div class="block-inner">
+                    <h2>Информация</h2>
+                    <p><strong>Тел.: </strong> +7 927 489 9521</p>
+                    <p><strong>E-mail: </strong> shirapdorzho@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
