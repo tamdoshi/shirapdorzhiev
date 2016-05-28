@@ -20,7 +20,7 @@ namespace Shirapdorzhiev.Models
         [EmailAddress]
         public string Email { get; set; }
 
-        [Required(ErrorMessage ="Ваша комментарий")]
+        [Required(ErrorMessage ="Ваш комментарий")]
         public string Comment { get; set; }
     }
 
