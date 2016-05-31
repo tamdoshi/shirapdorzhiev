@@ -13,14 +13,11 @@ namespace Shirapdorzhiev.Models
         [Required(ErrorMessage ="Необходимо ваше имя")]
         public string FirstName { get; set; }
 
-        [Required(ErrorMessage = "Необходимо ваша фамилия")]
         public string LastName { get; set; }
 
         [Required(ErrorMessage = "Необходим ваш Email")]
-        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Введите, пожалуйста, текст")]
         public string Comment { get; set; }
     }
 
