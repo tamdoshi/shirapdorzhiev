@@ -28,6 +28,7 @@
                     <div class="row">
                         @Html.LabelFor(model => model.LastName, "Фамилия:", new { @class = "label_name" })
                         @Html.EditorFor(model => model.LastName)
+                        @Html.ValidationMessageFor(model=>model.LastName)
                     </div>
 
                     <div class="row">
@@ -38,6 +39,7 @@
                     <div class="row">
                         @Html.LabelFor(model => model.Comment, "Ваше сообщение:", new { @class = "label_name" })
                         @Html.TextAreaFor(model => model.Comment, new { @rows = "4" })
+                        @Html.ValidationMessageFor(model=>model.Comment)
                     </div>
 
                     <div class="row contact_buttons">
