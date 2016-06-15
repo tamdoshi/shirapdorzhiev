@@ -452,6 +452,7 @@ body#home #content .latest-article ul
         background: url(images/slide-bg.png) no-repeat;
         padding: 18px;
         margin-left: 470px;
+        cursor:pointer;
     }
 
         #featured-section .featured-works img
@@ -1023,6 +1024,7 @@ html, body
     #footer, .page-wrap:after
     {
         height: 112px;
+        margin-top:30px;
     }
 
 /*#footer{
@@ -1044,12 +1046,18 @@ html, body
 }*/
 
 
-
+.contact_form .row{
+    overflow:hidden
+}
 
 .contact_form
 {
     width: 960px;
     margin: 25px 0 0;
+}
+
+.contact_form textarea{
+    float:left;
 }
 
     /*.contact_form input,
@@ -1061,7 +1069,7 @@ html, body
     }*/
 
 
-        .contact_form input[type=text], .contact_form textarea
+        .contact_form input[type=text],.contact_form input[type=email], .contact_form textarea
         {
             outline: none;
             padding: 3px 0px 3px 3px;
@@ -1072,9 +1080,13 @@ html, body
             color: #000;
             -webkit-transition: all 0.30s ease-in-out;
             -moz-transition: all 0.30s ease-in-out;
-            -ms-transition: all 0.30s ease-in-out;
             -o-transition: all 0.30s ease-in-out;
             transition: all 0.30s ease-in-out;
+            width: 293px;
+            font-size: 13px;
+            padding: 4px;
+            margin-bottom: 15px;
+            color: #797676;
         }
 
             .contact_form input[type=text]:focus, .contact_form textarea:focus, .contact_form input[type=email]:focus
@@ -1097,24 +1109,14 @@ html, body
     }
 
 
-
-    .contact_form input[type="text"], .contact_form input[type="email"]  .contact_form textarea
-    {
-        width: 365px;
-        font-size: 13px;
-        padding: 4px;
-        margin-bottom: 15px;
-        color: #797676;
-    }
-
 }
 
-body .contact_form .contact_buttons .button
+.contact_form .button
 {
     font-size: 14px;
     width: 100px;
     margin-right: 20px;
-    cursor:pointer
+    cursor:pointer;
     
 }
 
@@ -1126,7 +1128,7 @@ body .contact_form .contact_buttons .button
 .field-validation-error
 {
     color: #b10000;
-    font-size: smaller;
+    font-size: 13px;
 }
 
 .field-validation-valid
@@ -1149,3 +1151,5 @@ body .contact_form .contact_buttons .button
 {
     display: none;
 }
+
+
