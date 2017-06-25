@@ -32,9 +32,11 @@ namespace Shirapdorzhiev
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                     "~/Content/style.css",
-                      "~/Content/reset.css"
-
+                     
+                      "~/Content/reset.css",
+                      "~/Content/main.css",
+                      "~/Content/fonts.css",
+                      "~/Content/bootstrap.css"
                       ));
 
             bundles.Add(new StyleBundle("~/Content/glisse").Include(

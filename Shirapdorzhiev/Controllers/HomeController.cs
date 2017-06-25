@@ -30,6 +30,12 @@ namespace Shirapdorzhiev.Controllers
             return View();
         }
 
+        public ActionResult Test()
+        {
+            
+            return View();
+        }
+
         [HttpPost]
         public ActionResult Contact(ContactModels c)
         {

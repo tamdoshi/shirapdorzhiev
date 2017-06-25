@@ -1,0 +1,29 @@
+﻿@font-face {
+	font-family: 'Palatino Linotype';
+	src: url('../fonts/subset-PalatinoLinotype-Italic.eot');
+	src: url('../fonts/subset-PalatinoLinotype-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/subset-PalatinoLinotype-Italic.woff') format('woff'),
+		url('../fonts/subset-PalatinoLinotype-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Kaushan Script';
+	src: url('../fonts/subset-KaushanScript-Regular.eot');
+	src: url('../fonts/subset-KaushanScript-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/subset-KaushanScript-Regular.woff') format('woff'),
+		url('../fonts/subset-KaushanScript-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CMs Huree';
+	src: url('../fonts/CMsHuree.eot');
+	src: url('../fonts/CMsHuree.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/CMsHuree.woff') format('woff'),
+		url('../fonts/CMsHuree.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
